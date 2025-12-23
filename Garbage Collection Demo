@@ -1,0 +1,11 @@
+class GarbageDemo {
+    protected void finalize() {
+        System.out.println("Garbage Collected");
+    }
+
+    public static void main(String[] args) {
+        GarbageDemo g1 = new GarbageDemo();
+        g1 = null;
+        System.gc();
+    }
+}
