@@ -1,0 +1,12 @@
+class FinalDemo {
+    final int x = 10;
+
+    void display() {
+        System.out.println(x);
+    }
+
+    public static void main(String[] args) {
+        FinalDemo f = new FinalDemo();
+        f.display();
+    }
+}
