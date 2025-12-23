@@ -1,0 +1,17 @@
+class CopyConstructor {
+    int x;
+
+    CopyConstructor(int x) {
+        this.x = x;
+    }
+
+    CopyConstructor(CopyConstructor c) {
+        x = c.x;
+    }
+
+    public static void main(String[] args) {
+        CopyConstructor c1 = new CopyConstructor(10);
+        CopyConstructor c2 = new CopyConstructor(c1);
+        System.out.println(c2.x);
+    }
+}
